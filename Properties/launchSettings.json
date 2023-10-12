@@ -1,0 +1,10 @@
+{
+    "profiles": {
+        "SkribeSeinSDBot": {
+            "commandName": "Project",
+            "environmentVariables": {
+                "SdPath": "http://10.147.17.200:7860"
+            }
+        }
+    }
+}
