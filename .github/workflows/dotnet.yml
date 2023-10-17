@@ -24,7 +24,7 @@ on:
         description: 'Test scenario tags'  
 
 jobs:
-  build:
+  build-and-publish:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
@@ -46,5 +46,5 @@ jobs:
         # Artifact name
         name: jellychan# optional, default is artifact
         # A file, directory or wildcard pattern that describes what to upload
-        path: ./SkribeSeinSDBot/Bin/Release
+        path: SkribeSeinSDBot/SkribeSeinSDBot/Bin/Release/Net7.0/Publish
         # The desired behavior if no files are found using the provided path.
