@@ -360,6 +360,8 @@ internal class StableDiffusionGeneratorCmd : ICommand
 			AdditionalProperties = new Dictionary<string, object>()
 			{
 				{ "clip_skip", data.ClipSkip },
+				{ "force_hr", data.UpscaleScale > 1},
+				{ "hr_force", data.UpscaleScale > 1},
 			},
 		};
 
