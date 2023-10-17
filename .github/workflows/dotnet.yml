@@ -6,8 +6,14 @@ name: .NET
 on:
   push:
     branches: [ "master" ]
+    paths:
+    - '**.cs'
+    - '**.csproj'
   pull_request:
     branches: [ "master" ]
+    paths:
+    - '**.cs'
+    - '**.csproj'
 
 jobs:
   build:
@@ -20,5 +26,8 @@ jobs:
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: 7.0.x
+    
+    - name: Install dependencies
+      run: dotnet restore ./SkribeSeinSDBot.csproj
     - name: Build
-      run: dotnet build
+      run: dotnet build ./SkribeSeinSDBot.csproj --configuration Release --no-restore
