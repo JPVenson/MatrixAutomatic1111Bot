@@ -39,7 +39,7 @@ jobs:
       run: dotnet build ./SkribeSeinSDBot.csproj --configuration Release --no-restore
       
     - name: Build
-      run: dotnet publish -p:PublishProfile=SkribeSeinSDBot/Properties/PublishProfiles/FolderProfile.pubxml
+      run: dotnet publish -p:PublishProfile=SkribeSeinSDBot/Properties/PublishProfiles/FolderProfile.pubxml ./SkribeSeinSDBot.csproj
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v3.1.3
       with:
