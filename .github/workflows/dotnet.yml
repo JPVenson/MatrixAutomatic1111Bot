@@ -46,5 +46,5 @@ jobs:
         # Artifact name
         name: jellychan# optional, default is artifact
         # A file, directory or wildcard pattern that describes what to upload
-        path: SkribeSeinSDBot/SkribeSeinSDBot/Bin/Release/Net7.0/Publish
+        path: /home/runner/work/MatrixAutomatic1111Bot/MatrixAutomatic1111Bot/bin/Release/net7.0/win-x64/publish/
         # The desired behavior if no files are found using the provided path.
